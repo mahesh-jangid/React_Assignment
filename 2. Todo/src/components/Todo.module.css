@@ -1,0 +1,16 @@
+.todo_list {
+  width: 36%;
+  margin: auto;
+}
+.input {
+  padding: 9px 0px;
+  width: 19%;
+  margin: auto;
+}
+.add_btn {
+  padding: 8px 0;
+  border: none;
+  border: 1px solid red;
+  width: 71px;
+  cursor: pointer;
+}

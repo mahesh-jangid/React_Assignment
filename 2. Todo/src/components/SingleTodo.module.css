@@ -1,0 +1,20 @@
+.singletodo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66%;
+  margin: auto;
+  border: 1px solid skyblue;
+  margin-top: 1rem;
+}
+p {
+  margin-left: 1.73rem;
+}
+.striked {
+  text-decoration: line-through;
+}
+.checkbox {
+  width: 38px;
+  /* height: auto; */
+  height: 28px;
+}
