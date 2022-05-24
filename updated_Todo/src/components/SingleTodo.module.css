@@ -1,0 +1,27 @@
+.task {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 0.6em;
+  margin: 0.5em 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  background: rgb(12, 124, 251);
+  border-radius: 5px;
+  margin: 0px 8px;
+  padding: 3px 6px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  float: right;
+}
+#completed {
+  color: green;
+  text-decoration: line-through;
+}
+.removeTask {
+  width: 25px;
+}

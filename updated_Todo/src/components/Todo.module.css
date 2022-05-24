@@ -1,0 +1,14 @@
+.todo_container {
+  background: rgb(41, 33, 33);
+  width: 41vw;
+  margin: 10em auto;
+  border-radius: 11px;
+  padding: 20px 10px;
+  color: white;
+  border: 1px solid rgb(190, 178, 184);
+}
+.header {
+  margin: 0.5em;
+  font-size: 1em;
+  text-align: center;
+}
