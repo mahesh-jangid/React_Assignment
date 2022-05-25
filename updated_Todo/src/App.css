@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #06142e;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ button {
   font-size: calc(10px + 2vmin);
 }
 body {
-  background: rgb(1, 7, 24);
+  background: rgb(6, 27, 83);
 }
 
 .header {

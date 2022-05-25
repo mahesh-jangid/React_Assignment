@@ -1,5 +1,5 @@
 .todo_container {
-  background: rgb(41, 33, 33);
+  background: rgb(34, 32, 32);
   width: 41vw;
   margin: 10em auto;
   border-radius: 11px;
@@ -11,4 +11,15 @@
   margin: 0.5em;
   font-size: 1em;
   text-align: center;
+}
+.limit {
+  width: 93%;
+  display: flex;
+  align-items: inherit;
+  justify-content: flex-end;
+}
+.select {
+  background-color: rgb(255, 35, 134);
+  color: white;
+  padding: 5px 10px;
 }

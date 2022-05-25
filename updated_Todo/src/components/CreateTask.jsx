@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import styles from "./CreateTask.module.css";
 
-export const CreateTask = ({ addTask }) => {
+export const CreateTask = () => {
   const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {

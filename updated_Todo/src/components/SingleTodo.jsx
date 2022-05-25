@@ -1,21 +1,25 @@
 import React, { useState } from "react";
 import styles from "./SingleTodo.module.css";
-import Todo from "./Todo";
+import { Button, Card, Form } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export const SingleTodo = ({ task, index, completeTask, removeTask }) => {
   return (
-    <div className={styles.task} id={task.completed ? styles.completed : ""}>
-      <span style={{ marginRight: "16px" }}>{task.title}</span>
-      <div>
-        <button
-          className={`removeTask ${styles.button}`}
-          style={{ background: "red" }}
-          onClick={() => removeTask(index, task.id)}
-        >
-          X
-        </button>
-        <button onClick={() => completeTask(index)}>Complete</button>
+    <Card className="bg-dark">
+      <div className={styles.task} id={task.completed ? styles.completed : ""}>
+        <span style={{ marginRight: "16px" }}>{task.title}</span>
+        <div className={styles.btns}>
+          <Button variant="outline-success" onClick={() => completeTask(index)}>
+            Complete
+          </Button>
+          <Button
+            variant="outline-danger"
+            onClick={() => removeTask(index, task.id)}
+          >
+            ✕
+          </Button>
+        </div>
       </div>
-    </div>
+    </Card>
   );
 };

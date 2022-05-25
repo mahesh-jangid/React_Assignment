@@ -9,7 +9,7 @@
 }
 
 button {
-  background: rgb(12, 124, 251);
+  background: rgb(255, 35, 134);
   border-radius: 5px;
   margin: 0px 8px;
   padding: 3px 6px;
@@ -17,6 +17,7 @@ button {
   cursor: pointer;
   color: white;
   float: right;
+  font-size: 16px;
 }
 #completed {
   color: green;
@@ -24,4 +25,10 @@ button {
 }
 .removeTask {
   width: 25px;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 31%;
 }
