@@ -21,6 +21,7 @@ function App() {
   const [data, setData] = useState([]);
   const [filterBy, setFilterBy] = useState("");
 
+
   const updateFilter = (newFilter) => {
     // console.log(newFilter);
     switch (newFilter) {
