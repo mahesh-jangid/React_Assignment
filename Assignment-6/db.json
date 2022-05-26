@@ -1,0 +1,48 @@
+{
+    "user": [{
+            "id": 1,
+            "address": "Jaipur,Rajasthan",
+            "age": "32",
+            "department": "Doctor",
+            "married": true,
+            "name": "Mahesh Jangid",
+            "salary": "44000"
+        },
+        {
+            "name": "Mahesh Jangid",
+            "age": "32",
+            "address": "Chennai",
+            "married": true,
+            "department": "Engineer",
+            "salary": "40000",
+            "id": 2
+        },
+        {
+            "name": "Mahesh",
+            "age": "23",
+            "address": "New York",
+            "married": false,
+            "department": "Graphic Designer",
+            "salary": "40000",
+            "id": 3
+        },
+        {
+            "name": "Rekha ",
+            "age": "22",
+            "address": "Jaipur",
+            "married": false,
+            "department": "Graphic Designer",
+            "salary": "32000",
+            "id": 4
+        },
+        {
+            "name": "Mahesh Jangid",
+            "age": "32",
+            "address": "Delhi",
+            "married": false,
+            "department": "Doctor",
+            "salary": "40000",
+            "id": 5
+        }
+    ]
+}
