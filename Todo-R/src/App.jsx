@@ -44,9 +44,12 @@ export default function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    dispatch({ type: "ADD_TASK", payload: { task: task } });
-    setTask("");
+    if (task === "") {
+      return;
+    } else {
+      dispatch({ type: "ADD_TASK", payload: { task: task } });
+      setTask("");
+    }
   };
 
   return (
