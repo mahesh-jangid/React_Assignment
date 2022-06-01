@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-export const FormData = ({ handleShow, handleContent }) => {
+export const FormData = () => {
   const [userData, setUserData] = useState({
     name: "",
     age: "",
@@ -9,21 +9,44 @@ export const FormData = ({ handleShow, handleContent }) => {
     married: "",
     department: "",
     salary: "",
+    profile_photo: "",
   });
 
+  const [image, setImage] = useState({ preview: "", raw: "" });
+
   const handleData = (e) => {
-    let { name, value, checked, type } = e.target;
+    let { name, value, checked, type, FileList } = e.target;
     value = type === "checkbox" ? checked : value;
-    setUserData({ ...userData, [name]: value });
+    if (type === "file") {
+      setUserData({
+        ...userData,
+        [name]: URL.createObjectURL(e.target.files[0]),
+      });
+      setImage({
+        preview: URL.createObjectURL(e.target.files[0]),
+        raw: e.target.files[0],
+      });
+    } else {
+      setUserData({ ...userData, [name]: value });
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const formData = new Array();
+    formData.push("image", image.raw);
+
+    await fetch("https://api.imgur.com/3/image", {
+      method: "POST",
+      headers: {
+        Authorization: "Client-ID 1a25c76bc792043",
+      },
+      body: formData,
+    });
+    console.log(image);
+
     console.log(userData);
     axios.post("http://localhost:8080/user", userData);
-
-    handleContent();
-    handleShow();
   };
 
   return (
@@ -90,7 +113,18 @@ export const FormData = ({ handleShow, handleContent }) => {
         />
         <label htmlFor=""> Married</label>
         <br />
-        <input type="submit" />
+        {image.preview ? (
+          <img src={image.preview} alt="dummy" width="300" height="auto" />
+        ) : (
+          <input
+            type="file"
+            accept="image/png , image/jpeg"
+            name="profile_photo"
+            onChange={handleData}
+          />
+        )}
+
+        <input type="submit" value={"UPLOAD"} />
       </form>
     </div>
   );

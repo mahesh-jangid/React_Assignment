@@ -1,48 +1,106 @@
 {
-    "user": [{
-            "id": 1,
-            "address": "Jaipur,Rajasthan",
-            "age": "32",
-            "department": "Doctor",
-            "married": true,
-            "name": "Mahesh Jangid",
-            "salary": "44000"
-        },
-        {
-            "name": "Mahesh Jangid",
-            "age": "32",
-            "address": "Chennai",
-            "married": true,
-            "department": "Engineer",
-            "salary": "40000",
-            "id": 2
-        },
-        {
-            "name": "Mahesh",
-            "age": "23",
-            "address": "New York",
-            "married": false,
-            "department": "Graphic Designer",
-            "salary": "40000",
-            "id": 3
-        },
-        {
-            "name": "Rekha ",
-            "age": "22",
-            "address": "Jaipur",
-            "married": false,
-            "department": "Graphic Designer",
-            "salary": "32000",
-            "id": 4
-        },
-        {
-            "name": "Mahesh Jangid",
-            "age": "32",
-            "address": "Delhi",
-            "married": false,
-            "department": "Doctor",
-            "salary": "40000",
-            "id": 5
-        }
-    ]
+  "user": [
+    {
+      "name": "sdsd",
+      "age": "32",
+      "address": "pune",
+      "married": true,
+      "department": "Doctor",
+      "salary": "44444",
+      "profile_photo": {
+        "0": {}
+      },
+      "id": 1
+    },
+    {
+      "name": "",
+      "age": "",
+      "address": "",
+      "married": "",
+      "department": "",
+      "salary": "",
+      "profile_photo": "blob:http://localhost:3000/b63c901b-fae3-40b3-9249-3dfab4a74c76",
+      "id": 2
+    },
+    {
+      "name": "Mahesh Jangid",
+      "age": "22",
+      "address": "Jaipur",
+      "married": "",
+      "department": "Software Engineer",
+      "salary": "45000",
+      "profile_photo": "blob:http://localhost:3000/581b557d-2d95-4194-b911-67096de23a3e",
+      "id": 3
+    },
+    {
+      "name": "Mahesh Jangid",
+      "age": "22",
+      "address": "Jaipur",
+      "married": "",
+      "department": "Software Engineer",
+      "salary": "45000",
+      "profile_photo": "blob:http://localhost:3000/581b557d-2d95-4194-b911-67096de23a3e",
+      "id": 4
+    },
+    {
+      "name": "Dev Ed",
+      "age": "34",
+      "address": "USA",
+      "married": false,
+      "department": "Software Engineer",
+      "salary": "44444",
+      "profile_photo": "blob:http://localhost:3000/26723cdd-bdfb-4573-9f3d-352101d711ae",
+      "id": 5
+    },
+    {
+      "name": "MJ ",
+      "age": "22",
+      "address": "Delhi",
+      "married": "",
+      "department": "Bussiness",
+      "salary": "44444",
+      "profile_photo": "blob:http://localhost:3000/94835cb8-0518-4cb4-9d51-5570ee887218",
+      "id": 6
+    },
+    {
+      "name": "sdd",
+      "age": "sds",
+      "address": "sddscd",
+      "married": true,
+      "department": "Lawyer",
+      "salary": "32000",
+      "profile_photo": "blob:http://localhost:3000/22516750-a13c-4d23-9727-948ed0aaf4e5",
+      "id": 7
+    },
+    {
+      "name": "Rekha",
+      "age": "21",
+      "address": "Jaipur",
+      "married": "",
+      "department": "Graphic Designer",
+      "salary": "33333",
+      "profile_photo": "blob:http://localhost:3000/33f65ad0-3d7f-47b6-8368-170d8e77a93e",
+      "id": 8
+    },
+    {
+      "name": "Rekha",
+      "age": "21",
+      "address": "jaipur",
+      "married": "",
+      "department": "Graphic Designer",
+      "salary": "33333",
+      "profile_photo": "blob:http://localhost:3000/9fcf9d1d-6ffe-4eee-88e3-d5dfc46bb039",
+      "id": 9
+    },
+    {
+      "name": "sddsd",
+      "age": "sdsdcds",
+      "address": "sdcsdd",
+      "married": false,
+      "department": "Doctor",
+      "salary": "1222",
+      "profile_photo": "blob:http://localhost:3000/4999f9f2-b652-409b-a886-f9bb365f27cf",
+      "id": 10
+    }
+  ]
 }
