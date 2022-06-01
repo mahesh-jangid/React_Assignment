@@ -1,0 +1,92 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.App {
+  background-color: black;
+  height: 97vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+.dashboard_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 8px;
+}
+.dashboard_nav h2 {
+  font-size: 28px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.activeUsers {
+  width: 94%;
+  margin: auto;
+  background-color: #141415;
+  margin: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 6px;
+  background-color: #373737;
+}
+
+.User {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.user_info {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 32px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+p {
+  font-size: 13px;
+}
